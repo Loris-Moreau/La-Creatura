@@ -1,6 +1,3 @@
-﻿  Creature.cpp
-  La Creatura.cpp
-C:\Users\loris.moreau\source\repos\La Creatura\La Creatura\DiceRoll.h(14,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-  Monster.cpp
-  Generating Code...
+﻿  La Creatura.cpp
+C:\Users\loris.moreau\source\repos\La Creatura\La Creatura\DiceRoll.h(11,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   La Creatura.vcxproj -> C:\Users\loris.moreau\source\repos\La Creatura\x64\Debug\La Creatura.exe

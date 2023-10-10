@@ -22,8 +22,6 @@ void DiceRoll(int modifier)
 		//cout << result << endl;
 	}
 
-	//int modifier = attacks[3]._attackBonus;
-
 	result = result + modifier;
 	cout << "Modifier : " << modifier << endl;
 	cout << nrDice << "D" << nrSides << " = " << result << endl;
