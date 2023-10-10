@@ -136,6 +136,7 @@
     <ClInclude Include="Attack.h" />
     <ClInclude Include="DamageType.h" />
     <ClInclude Include="Creature.h" />
+    <ClInclude Include="DiceRoll.h" />
     <ClInclude Include="Loot.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="Weapon.h" />

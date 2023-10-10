@@ -16,6 +16,7 @@ public:
 	void Attacks();
 	void Heal();
 
+private:
 	string _name;
 	string _description;
 	int _health;

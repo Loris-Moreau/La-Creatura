@@ -4,7 +4,7 @@
 
 class Monster : public Creature
 {
-public: 
+private: 
     vector<Loot> _loot;
     int _goldAmount = 0;
 };

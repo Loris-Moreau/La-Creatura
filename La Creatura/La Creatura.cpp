@@ -3,6 +3,7 @@
 
 #include "Monster.h"
 #include "Attack.h"
+#include "DiceRoll.h"
 
 using namespace std;
 
@@ -19,27 +20,5 @@ int main()
 	vector<Attack> attacks{SwordSlash, londonHandshake, magicAttack, rabbies};
 	Creature jim("Jim", "Just some guy", 100, attacks);
 
-	//Dice Rolls
-	///Need to roll a 3D6 + modifier (3 rand & then add them togher with the modifier
-	int nrDice = 3, nrSides = 6;
-	srand(time(NULL));
-	int result = 0;
-
-	cout << "Enter number of die being used : ";
-	cin >> nrDice;
-
-	cout << "Enter the number of sides : ";
-	cin >> nrSides;
-
-	for (int i = 0; i < nrDice; i++)
-	{
-		result += ((rand() % nrSides) + 1);
-		//cout << result << endl;
-	}
-
-	int modifier = attacks[3]._attackBonus;
-
-	result = result + modifier;
-	cout << "Modifier : " << modifier << endl;
-	cout << nrDice << "D" << nrSides << " = " << result << endl;
+	DiceRoll(attacks[3]._attackBonus);
 }

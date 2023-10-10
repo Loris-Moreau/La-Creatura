@@ -47,5 +47,8 @@
     <ClInclude Include="Loot.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="DiceRoll.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
