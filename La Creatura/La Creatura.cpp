@@ -11,13 +11,16 @@ int main()
 {
 	//attacks
 	///Attack(string name, Weapon weapon, int damagePoints, DamageType damageType, int attackBonus);
-	Attack SwordSlash("Sword Slash", (Weapon)Sword, 10, (DamageType)Cut, 3);
-	Attack londonHandshake("Dagger Stab", (Weapon)Dagger, 5, (DamageType)Stab, 2);
-	Attack magicAttack("Magic Attack", (Weapon)Staff, 20, (DamageType)Pshyc, 5);
-	Attack rabbies("Poisonous Bite", (Weapon)Teeth, 40, (DamageType)Poison, 5);
+	Attack punch("Punch",					  (Weapon)NULL, 2,   (DamageType)Bludgeoning, 5);
+	Attack SwordSlash("Sword Slash",		  (Weapon)Sword, 10, (DamageType)Cut,		  3);
+	Attack londonHandshake("Dagger Stab",	  (Weapon)Dagger, 5, (DamageType)Stab,		  2);
+	Attack magicPAttack("Magic Psych Attack", (Weapon)Staff, 20, (DamageType)Pshyc,		  4);
+	Attack magicDAttack("Magic Drain Attack", (Weapon)Staff, 20, (DamageType)Drain,		  4);
+	Attack rabbies("Poisonous Bite",		  (Weapon)Teeth, 35, (DamageType)Poison,	  5);
+	Attack manSlaughter("Gun Wound",		  (Weapon)Gun,  90, (DamageType)Burn,		  0);
 
+	vector<Attack> attacks{punch, SwordSlash, londonHandshake, magicPAttack, magicDAttack, rabbies, manSlaughter};
 	///Creature(string name,string desc, int health, vector<Attack>& _attack)
-	vector<Attack> attacks{SwordSlash, londonHandshake, magicAttack, rabbies};
 	Creature jim("Jim", "Just some guy", 100, attacks);
 
 	DiceRoll(attacks[3]._attackBonus);

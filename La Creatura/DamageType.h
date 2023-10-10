@@ -20,7 +20,7 @@ inline string DamageTypeToStr(DamageType damageType)
 	switch (damageType)
 	{
 	default:
-		return "Fist";
+		return "Default";
 
 	case DamageType::Cut:
 		return "Cut";

@@ -3,6 +3,7 @@
 #include <string>
 
 using namespace std;
+
 enum Loot
 {
 	JungleJuice,
