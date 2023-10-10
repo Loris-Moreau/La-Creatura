@@ -19,9 +19,9 @@ int main()
 	vector<Attack> attacks{SwordSlash, londonHandshake, magicAttack, rabbies};
 	Creature jim("Jim", "Just some guy", 100, attacks);
 
-	//dice rolls
-	///need to roll a 3D6 + modifier (3 rand & then add them togher with the modifier
-	int nrDice = 1, nrSides = 6;
+	//Dice Rolls
+	///Need to roll a 3D6 + modifier (3 rand & then add them togher with the modifier
+	int nrDice = 3, nrSides = 6;
 	srand(time(NULL));
 	int result = 0;
 
