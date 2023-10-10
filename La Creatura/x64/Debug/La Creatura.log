@@ -1,2 +1,3 @@
 ﻿  La Creatura.cpp
+C:\Users\loris.moreau\source\repos\La Creatura\La Creatura\La Creatura.cpp(26,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   La Creatura.vcxproj -> C:\Users\loris.moreau\source\repos\La Creatura\x64\Debug\La Creatura.exe

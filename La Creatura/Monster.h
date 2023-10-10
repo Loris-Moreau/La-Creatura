@@ -8,4 +8,3 @@ public:
     vector<Loot> _loot;
     int _goldAmount = 0;
 };
-

@@ -21,6 +21,5 @@ public:
 
 	DamageType _damageType;
 
-	int _attackBonus;
+	int _attackBonus = 0;
 };
-

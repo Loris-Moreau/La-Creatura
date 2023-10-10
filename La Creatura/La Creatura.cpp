@@ -1,5 +1,4 @@
-// La Creatura.cpp : This file contains the 'main' function. Program execution begins and ends there.
-
+//La Creatura.cpp : This file contains the 'main' function. Program execution begins and ends there.
 #include <iostream>
 
 #include "Monster.h"
@@ -20,17 +19,17 @@ int main()
 	vector<Attack> attacks{SwordSlash, londonHandshake, magicAttack, rabbies};
 	Creature jim("Jim", "Just some guy", 100, attacks);
 
-	//dice rolls testing
+	//dice rolls
 	///need to roll a 3D6 + modifier (3 rand & then add them togher with the modifier
 	int nrDice = 1, nrSides = 6;
-	//srand(time(0));
+	srand(time(NULL));
 	int result = 0;
 
-	//cout << "Enter number of die being used : " << endl;
-	/*cin >>*/ nrDice = 2;
+	cout << "Enter number of die being used : ";
+	cin >> nrDice;
 
-	//cout << "Enter the number of sides : " << endl;
-	/*cin >>*/ nrSides = 6;
+	cout << "Enter the number of sides : ";
+	cin >> nrSides;
 
 	for (int i = 0; i < nrDice; i++)
 	{
@@ -38,5 +37,7 @@ int main()
 		cout << result << endl;
 	}
 
+	int modifier = Attack::_attackBonus;
+	result = result + modifier;
 	cout << nrDice << "D" << nrSides << " = " << result << endl;
 }
