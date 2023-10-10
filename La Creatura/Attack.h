@@ -13,6 +13,9 @@ class Attack
 public:
 	Attack(string name, Weapon weapon, int damagePoints, DamageType damageType, int attackBonus);
 
+	int _attackBonus = 0;
+
+private:
 	string _name;
 
 	Weapon _weapon;
@@ -21,5 +24,5 @@ public:
 
 	DamageType _damageType;
 
-	int _attackBonus = 0;
+
 };

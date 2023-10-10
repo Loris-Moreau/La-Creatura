@@ -34,10 +34,12 @@ int main()
 	for (int i = 0; i < nrDice; i++)
 	{
 		result += ((rand() % nrSides) + 1);
-		cout << result << endl;
+		//cout << result << endl;
 	}
 
-	int modifier = Attack::_attackBonus;
+	int modifier = attacks[3]._attackBonus;
+
 	result = result + modifier;
+	cout << "Modifier : " << modifier << endl;
 	cout << nrDice << "D" << nrSides << " = " << result << endl;
 }
