@@ -23,6 +23,4 @@ private:
 	int _damagePoints;
 
 	DamageType _damageType;
-
-
 };
