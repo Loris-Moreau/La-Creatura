@@ -9,6 +9,8 @@ using namespace std;
 
 int main()
 {
+	srand(time(NULL));
+
 	//attacks
 	///Attack(string name, Weapon weapon, int damagePoints, DamageType damageType, int attackBonus);
 	Attack punch("Punch",					  (Weapon)NULL, 2,   (DamageType)Bludgeoning, 5);
@@ -20,8 +22,9 @@ int main()
 	Attack manSlaughter("Gun Wound",		  (Weapon)Gun,  90, (DamageType)Burn,		  0);
 
 	vector<Attack> attacks{punch, SwordSlash, londonHandshake, magicPAttack, magicDAttack, rabbies, manSlaughter};
-	///Creature(string name,string desc, int health, vector<Attack>& _attack)
-	Creature jim("Jim", "Just some guy", 100, attacks);
+	///Creature(string name,string desc, int health, vector<Attack>& _attack, int defensScore)
+	Creature jim("Jim", "Just some guy", 100, attacks, 10);
 
-	DiceRoll(attacks[3]._attackBonus);
+	//DiceRoll(attacks[6].GetAttackBonus());
+	jim.Attacks(attacks[3].GetAttackBonus());
 }

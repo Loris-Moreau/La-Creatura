@@ -11,9 +11,9 @@ using namespace std;
 class Creature
 {
 public:
-	Creature(string name,string desc, int health, vector<Attack>& _attack);
+	Creature(string name,string desc, int health, vector<Attack>& _attack, int defenseScore);
 
-	void Attacks();
+	void Attacks(int modifier);
 	void Heal();
 
 private:
@@ -22,4 +22,6 @@ private:
 	int _health;
 
 	vector<Attack> _attack;
+
+	int _defenseScore;
 };

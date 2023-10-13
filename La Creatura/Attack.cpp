@@ -5,3 +5,8 @@ Attack::Attack(string name, Weapon weapon, int damagePoints, DamageType damageTy
 {
 
 }
+
+int Attack::GetAttackBonus() const
+{
+	return _attackBonus;
+}
